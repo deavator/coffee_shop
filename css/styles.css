@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+/* =========================================== */
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+/* =========================================== */
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+-webkit-scrollbar-track {
+    background-color: transparent;
+}
+-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+/* =========================================== */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body {
+    background-color: #eee;
+    color: var(--black);
+}
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a {color: inherit;}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* =========================================== */
+.header {
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+.header__flex {
+    position: relative;
+    padding: 1.5rem 1rem;
+}
+.logo__img {
+    height: 4.5rem;
+}
+.navbar__link {
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.navbar__link:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+/* === MEDIA QUERIES ======================== */
+@media (max-width: 992px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        /* width: 2rem; height: 2rem; background-color: #f00; */
+    }
+    .navbar {
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .navbar__link {
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
