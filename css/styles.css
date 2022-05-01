@@ -1,3 +1,4 @@
+/* === IMPORT FONTS (Merienda One & Nunito ====*/
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
 /* =========================================== */
 :root {
@@ -7,6 +8,7 @@
     --light-color: #666;
     --border: .2rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --transition-2: .2s linear;
 }
 /* =========================================== */
 *::selection {
@@ -54,7 +56,46 @@ a {color: inherit;}
     align-items: center;
     justify-content: space-between;
 }
-/* =========================================== */
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background-color: var(--main-color);
+    color: var(--black);
+    cursor: pointer;
+    transition: all var(--transition-2);
+}
+.btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+.section-title {
+    font-family: 'Merienda One', cursive;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.section-text {
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+    color: var(--light-color);
+}
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading__image {
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+.heading__title {
+    height: 3rem;
+    font-size: 3rem;
+}
+
+
+/* === HEADER SECTION ========================== */
 .header {
     position: sticky;
     top: 0; left: 0; right: 0;
@@ -82,6 +123,67 @@ a {color: inherit;}
     font-size: 2.5rem;
     cursor: pointer;
 }
+/* === HOME SECTION ======================= */
+.home-bg {
+    background: linear-gradient(90deg, var(--white), transparent 70%), url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home {
+    /* min-height: 70rem; */
+    height: 100vh;
+}
+.home__content {
+    width: 50rem;
+    text-align: center;
+}
+.home__title {
+    font-size: 6rem;
+}
+.home__text {
+    color: var(--black);
+}
+/* === / END HOME SECTION === */
+
+/* === ABOUT SECTION ======================= */
+.about {
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about__image {
+    flex: 1 1 40rem;
+}
+.about__image img {
+    width: 100%;
+}
+.about__content {
+    flex: 1 1 40rem;
+}
+.about__title {
+    margin-bottom: 2rem;
+}
+.about__text {
+    margin-bottom: 3rem;
+}
+/* === / END ABOUT SECTION ======================= */
+
+/* === FACILITY SECTION === */
+.facility__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.facility__box {
+    text-align: center;
+}
+.box__image {
+    height: 5rem;
+}
+
+
+
 
 
 /* === MEDIA QUERIES ======================== */
@@ -89,11 +191,17 @@ a {color: inherit;}
     html {
         font-size: 55%;
     }
+    .home-bg {
+        background-position: left;
+    }
 }
 @media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
-        /* width: 2rem; height: 2rem; background-color: #f00; */
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
     }
     .navbar {
         position: absolute;
@@ -102,6 +210,7 @@ a {color: inherit;}
         border-top: var(--border);
         border-bottom: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
     }
     .navbar.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -115,5 +224,15 @@ a {color: inherit;}
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .content {
+        justify-content: center;
+        text-align: center;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .home__title {
+        font-size: 4rem;
     }
 }
