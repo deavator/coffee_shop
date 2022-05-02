@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 <body>
     <!-- HEADER SECTION START -->
     <header class="header"> <!-- sticky -->
-        <section class="header__flex flex">
+        <div class="header__flex flex container">
             <a href="#home" class="header__logo">
                 <img class="logo__img" src="images/logo.png" alt="Logo">
             </a>
@@ -27,17 +27,17 @@
                 <a href="#menu" class="navbar__link">Menu</a>
                 <a href="#gallery" class="navbar__link">Gallery</a>
                 <a href="#team" class="navbar__link">Team</a>
-                <a href="#contact" class="navbar__link">Contact</a>
+                <a href="#contacts" class="navbar__link">Contact</a>
             </nav>
             <!-- burger button -->
             <div id="menu-btn" class="fas fa-bars"></div>
-        </section>
+        </div>
     </header>
     <!-- / HEADER SECTION END -->
 
     <!-- HOME SECTION START -->
         <div class="home-bg">
-            <section class="home flex" id="home">
+            <section class="home flex container" id="home">
                 <div class="home__content content">
                     <h3 class="home__title section-title">Coffee Heaven</h3>
                     <p class="home__text section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas sit tempore laborum, corrupti eligendi.</p>
@@ -48,7 +48,7 @@
     <!-- / HOME SECTION END -->
 
     <!-- ABOUT SECTION START -->
-        <section class="about flex" id="about">
+        <section class="about flex container" id="about">
             <div class="about__image">
                 <img class="section__img" src="images/about-img.svg" alt="About cup">
             </div>
@@ -64,39 +64,228 @@
     <!-- /ABOUT SECTION END -->
 
     <!-- FACILITY SECTION START -->
-        <section class="facility">
+        <section class="facility container">
             <div class="facility__heading heading">
                 <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
-                <h3 class="facility__title section-title">Our facility</h3>
+                <h3 class="section-title">Our facility</h3>
             </div>
+
             <div class="facility__container box-container">
                 <!-- Box 1 -->
                 <div class="facility__box box">
-                    <img src="images/icon-1.png" alt="Varieties coffee Image" class="box__image">
-                    <h3 class="box__title">Varieties of coffees</h3>
-                    <p class="box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tempore veniam sit, cum laboriosam similique?</p>
+                    <img src="images/icon-1.png" alt="Varieties coffee Image" class="facility__image">
+                    <h3 class="facility__title box-title">Varieties of coffees</h3>
+                    <p class="box-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio perspiciatis necessitatibus ipsam, possimus rerum accusantium voluptatum mollitia! Optio nostrum animi maiores modi dolorem ab dignissimos aut tempora, et accusamus!</p>
                 </div>
                 <!-- Box 2 -->
                 <div class="facility__box box">
-                    <img src="images/icon-2.png" alt="Varieties coffee Image" class="box__image">
-                    <h3 class="box__title">coffee beans</h3>
-                    <p class="box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tempore veniam sit, cum laboriosam similique?</p>
+                    <img src="images/icon-2.png" alt="Varieties coffee Image" class="facility__image">
+                    <h3 class="facility__title box-title">coffee beans</h3>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aut laborum perferendis aspernatur eos impedit odit aliquid veniam vero exercitationem!</p>
                 </div>
                 <!-- Box 3 -->
                 <div class="facility__box box">
-                    <img src="images/icon-3.png" alt="Varieties coffee Image" class="box__image">
-                    <h3 class="box__title">Breakfast and sweets</h3>
-                    <p class="box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tempore veniam sit, cum laboriosam similique?</p>
+                    <img src="images/icon-3.png" alt="Varieties coffee Image" class="facility__image">
+                    <h3 class="facility__title box-title">Breakfast and sweets</h3>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facere, ratione velit placeat ad autem?</p>
                 </div>
                 <!-- Box 4 -->
                 <div class="facility__box box">
-                    <img src="images/icon-4.png" alt="Varieties coffee Image" class="box__image">
-                    <h3 class="box__title">Read to go coffee</h3>
-                    <p class="box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut tempore veniam sit, cum laboriosam similique?</p>
+                    <img src="images/icon-4.png" alt="Varieties coffee Image" class="facility__image">
+                    <h3 class="facility__title box-title">Read to go coffee</h3>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, in laudantium laborum similique nihil exercitationem. Excepturi provident facilis ea voluptatibus fugiat amet! Aliquid, pariatur modi.</p>
                 </div>
-
             </div>
         </section>
-    <!-- FACILITY SECTION END -->
+    <!-- | FACILITY SECTION END -->
+
+    <!-- MENU SECTION START -->
+        <section class="menu container" id="menu">
+            <div class="menu__heading heading">
+                <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
+                <h3 class="section-title">Popular Menu</h3>
+            </div>
+
+            <div class="menu__container box-container">
+                <!-- Menu 1 -->
+                <div class="menu__box box">
+                    <img src="images/menu-1.png" alt="Love you coffee" class="menu__image">
+                    <h3 class="menu__title box-title">Love you coffee</h3>
+                </div>
+                <!-- Menu 2 -->
+                <div class="menu__box box">
+                    <img src="images/menu-2.png" alt="Cappuccino" class="menu__image">
+                    <h3 class="menu__title box-title">Cappuccino</h3>
+                </div>
+                <!-- Menu 3 -->
+                <div class="menu__box box">
+                    <img src="images/menu-3.png" alt="Mocha coffee" class="menu__image">
+                    <h3 class="menu__title box-title">Mocha coffee</h3>
+                </div>
+                <!-- Menu 4 -->
+                <div class="menu__box box">
+                    <img src="images/menu-4.png" alt="Frappuccino" class="menu__image">
+                    <h3 class="menu__title box-title">Frappuccino</h3>
+                </div>
+                <!-- Menu 5 -->
+                <div class="menu__box box">
+                    <img src="images/menu-5.png" alt="Black coffee" class="box__image">
+                    <h3 class="menu__title box-title">Black coffee</h3>
+                </div>
+                <!-- Menu 6 -->
+                <div class="menu__box box">
+                    <img src="images/menu-6.png" alt="Love heart coffee" class="box__image">
+                    <h3 class="menu__title box-title">Love heart coffee</h3>
+                </div>
+            </div>
+        </section>
+    <!-- | MENU SECTION END -->
+    
+    <!-- GALLERY SECTION START -->
+    <section class="gallery container" id="gallery">
+        <div class="gallery__heading heading">
+            <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
+            <h3 class="section-title">Our gallery</h3>
+        </div>
+
+        <div class="gallery__container box-container">
+                <!-- Picture 1 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-1.webp" alt="Love you coffee" class="gallery__image">
+                </div>
+                <!-- Picture 2 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-2.jpg" alt="Love you coffee" class="gallery__image">
+                </div>
+                <!-- Picture 3 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-3.webp" alt="Love you coffee" class="gallery__image">
+                </div>
+                <!-- Picture 4 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-4.webp" alt="Love you coffee" class="gallery__image">
+                </div>
+                <!-- Picture 5 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-5.webp" alt="Love you coffee" class="gallery__image">
+                </div>
+                <!-- Picture 6 -->
+                <div class="gallery__box box">
+                    <img src="images/gallery-6.webp" alt="Love you coffee" class="gallery__image">
+                </div>
+               
+        </div>
+    </section>
+    <!-- / GALLERY SECTION END -->
+
+    <!-- TEAM SECTION START -->
+    <section class="team container" id="team">
+        <div class="team__heading heading">
+            <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
+            <h3 class="section-title">Our team</h3>
+        </div>
+
+        <div class="team__container box-container">
+            <!-- Member 1 -->
+            <div class="team__box box">
+                <img src="images/our-team-1.jpg" alt="John Deo image" class="team__image">
+                <h3 class="team__title box-title">John Deo</h3>
+            </div>
+            <!-- Member 2 -->
+            <div class="team__box box">
+                <img src="images/our-team-2.jpg" alt="Derek Bryant image" class="team__image">
+                <h3 class="team__title box-title">Derek Bryant</h3>
+            </div>
+            <!-- Member 3 -->
+            <div class="team__box box">
+                <img src="images/our-team-3.jpg" alt="Julianna Morris image" class="team__image">
+                <h3 class="team__title box-title">Julianna Morris</h3>
+            </div>
+            <!-- Member 4 -->
+            <div class="team__box box">
+                <img src="images/our-team-4.jpg" alt="Augustine Logan image" class="team__image">
+                <h3 class="team__title box-title">Augustine Logan</h3>
+            </div>
+            <!-- Member 5 -->
+            <div class="team__box box">
+                <img src="images/our-team-5.jpg" alt="Jade Primrose image" class="team__image">
+                <h3 class="team__title box-title">Jade Primrose</h3>
+            </div>
+            <!-- Member 6 -->
+            <div class="team__box box">
+                <img src="images/our-team-6.jpg" alt="John Boone image" class="team__image">
+                <h3 class="team__title box-title">John Boone</h3>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM SECTION END -->
+
+    <!-- CONTACTS SECTION START -->
+        <section class="contacts container" id="contacts">
+            <div class="contacts__heading heading">
+                <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
+                <h3 class="section-title">Contact us</h3>
+            </div>
+
+            <div class="contacts__container flex">
+                <div class="contacts__image">
+                    <img class="section__img" src="images/contact-img.svg" alt="Contact us">
+                </div>
+
+                <div class="contacts__content contacts">
+                    <form class="contacts__form" action="#" method="post">
+                        <h3 class="contacts__title">book a table</h3>
+                        <input type="text" name="name" required placeholder="Enter your name" class="input-box">
+                        <input type="tel" name="tel" required placeholder="Enter your phone number" class="input-box">
+                        <input type="number" name="guests" required placeholder="how many guests" min="1" max="99" class="input-box">
+                        <input type="submit" name="send" value="send message" class="contacts__btn btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+    <!-- / CONTACTS SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+        <footer class="footer">
+            <section class="footer__container box-container container">
+                <!-- Email box -->
+                <div class="footer__box box">
+                    <i class="fas fa-envelope round-bg"></i>
+                    <h3 class="footer__title box-title">Our email</h3>
+                    <a href="mailto:someuser@coffeeshop.com" class="footer__text box-text">someuser@coffeeshop.com</a>
+                    <a href="mailto:info@coffeeshop.com" class="footer__text box-text">info@coffeeshop.com</a>
+                </div>
+                <!-- Openning hours -->
+                <div class="footer__box box">
+                    <i class="fas fa-clock round-bg"></i>
+                    <h3 class="footer__title box-title">Openning hours</h3>
+                    <p class="footer__text box-text">07:00am to 09:00pm</p>
+                </div>
+                <!-- Shop location -->
+                <div class="footer__box box">
+                    <i class="fas fa-map-marker-alt round-bg"></i>
+                    <h3 class="footer__title box-title">Shop location</h3>
+                    <address class="footer__text box-text">Ipsum, Guanda - 164524</address>
+                </div>
+                <!-- Phones -->
+                <div class="footer__box box">
+                    <i class="fas fa-phone round-bg"></i>
+                    <h3 class="footer__title box-title">Our Phones</h3>
+                    <a href="tel:+1233455667" class="footer__text box-text">+123 345-56-67</a>
+                    <a href="tel:+1235656788" class="footer__text box-text">+123 565-67-88</a>
+                </div>
+            </section>
+            <div class="copyright">
+                <small class="footer__copyright">&copy;&nbsp; <a href="#home" class="footer__link">  2022@coffeeshop.com</a>  All Rights Reserved.</small>
+                <div class="css-prove container">
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                alt="Правильный CSS!" />
+                        </a>
+                </div>
+            </div>
+        </footer>
+    <!-- / FOOTER SECTION END -->
 </body>
 </html>
