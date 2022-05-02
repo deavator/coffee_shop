@@ -11,7 +11,8 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- custom js file link -->
-    <script src="js/script.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/sendForm.js" defer></script>
 
 </head>
 <body>
@@ -287,5 +288,25 @@
             </div>
         </footer>
     <!-- / FOOTER SECTION END -->
+
+    <!-- MODAL WINDOW STARTS -->
+    <div class="modal">
+        <div class="modal-body">
+            <div id="modal-close-btn" class="fas fa-bars fa-times"></div>
+			<div class="modal-wrapper">
+                <div class="modal__heading heading">
+                    <img class="heading__image" src="images/heading-img.png" alt="Section Heading Image">
+                    <h3 class="section-title">Thank you,</h3>
+                </div>
+				<div class="modal-message">
+                    <p class="section-title user-name"></p>
+					<p>Your reservation is confirmed</p>
+                    <p>See you in our coffee shop!</p>
+				</div>
+			</div>
+			<div class="modal-close"></div>
+		</div>
+	</div>
+    <!-- MODAL WINDOW STARTS -->
 </body>
 </html>
